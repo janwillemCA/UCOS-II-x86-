@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>uC/OS-II WIN32 Port - Werner.Zimmermann|AT|hs-esslingen.de </TITLE>
+	<META name="generator" content="HTML Tidy, see www.w3.org">
+	<META http-equiv="keywords" content="uC/OS-II uCOS-II uCOS uC/OS WIN32 Port">
+	<META http-equiv="description" content="uC/OS-II uCCOS-II WIN32 Port">
+	<META http-equiv="author" content="Prof. Dr.-Ing. Werner Zimmermann, Hochschule Esslingen, Germany">
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<STYLE type="text/css"> body {font-family: Arial,Helvetica,Sans-Serif; font-size: 12pt}
+	p {font-family: Arial,Helvetica,Sans-Serif; font-size: 12pt}
+	h1 {font-family: Arial,Helvetica,Sans-Serif; font-size: 16pt}
+	h2 {font-family: Arial,Helvetica,Sans-Serif; font-size: 14pt}
+	h3 {font-family: Arial,Helvetica,Sans-Serif; font-size: 12pt}
+	span {font-family: Arial,Helvetica,Sans-Serif; font-size: 12pt}
+	ul {font-family: Arial,Helvetica,Sans-Serif; font-size: 12pt}
+	.standard {font-family: Arial,Helvetica,Sans-Serif; font-size: 12pt}
+	</STYLE>
+
+</HEAD>
+<BODY>
+	<H1>uC/OS-II - WIN32 Port for 32bit Windows Operating Systems
+	</H1>
+	<H3>
+	    Copyright (C) 2004-... Werner.Zimmermann|AT|hs-esslingen.de
+	</H3>
+	<HR>
+	<H2>
+	    Overview
+	</H2>
+	<P>
+	    uC/OS-II (uCOS II) is a small, yet powerful real-time operating system developed by Jean J. Labrosse
+	    and described in his book "MicroC/OS-II - The Real-Time-Kernel", Second Edition, published
+	    by CMP Books. The operating system is highly CPU independent and has been ported to numerous
+	    microprocessor platforms (see <a href="http://www.micrium.com">www.micrium.com</a>). The source code
+	    as provided together with the book and via the web site may be freely used for non-commercial
+	    applications and educational purposes. Licenses for commercial use are available too.
+	</P>
+	<P>
+	    This document describes the Windows 32bit (WIN32) port of uC/OS-II, which allows to
+	    run uC/OS-II applications under Windows 9x, ME, NT, 2000 and XP. As the port relies on
+	    Windows' process and thread management features, the uC/OS-II WIN32 port does ***NOT***
+	    turn Windows into a real-time operating system!
+
+	    It was developed for didactic purposes to teach students at the Esslingen University of
+	    Applied Sciences, Esslingen, Germany the basics of real-time operating systems with
+	    an insight to OS internal implementation. This approach was chosen, because students
+	    do have much easier access to PCs at home or at university computing centers rather than to proprietary
+	    embedded systems. Powerful PC-based development tools like Microsoft Visual Studio or Cygwin's GCC are
+	    available with student discounts or even free of charge under appropriate university licenses or GPL
+	    as compared to costly embedded system cross-compilers and debuggers. Thus real-time system
+	    mechanisms can be studied with uC/OS-II under WIN32 providing a soft real-time-environment
+	    on PCs at home or in the university computer center. If the basic functionality of the
+	    application is working correctly, the application can be easily ported to an embedded system
+	    later in the lab.
+	</P>
+		<UL>
+	    <LI><B>
+		<A href="http://www.hs-esslingen.de/~zimmerma/software/index_uk.html"  target=_top>Get the latest version of uC/OS-II WIN32 and LINUX port</A>
+		</B>
+	    <LI>
+		<A href="#Release">Release Notes</A>
+	    <LI>
+		<A href="#Installation">Installation, Running and Recompiling the Samples</A>
+	    <LI>
+		<A href="#Internals">WIN32 Port Internals and Limitations</A>
+	    <LI>
+		<A href="#Disclaimer">Disclaimer and Copyright Information</A>
+	</UL>
+
+	<BR>
+
+	<H2>
+	    <A name="Release"></A>Release Notes
+	</H2>
+	<P>
+	    Only the port specific files of uC/OS-II (and some examples) are provided here. It is
+	    assumed, that you do have the uC/OS-II platform-independent source code as available together
+	    with the book or via www.ucos-ii.com. However, you can modify the example programs and recompile them
+	    without having installed the uC/OS-II source code, as long you do not touch the uC/OS-II configuration
+	    in os_cfg.h.
+	</P>
+	<P>
+	    The port was tested with uC/OS-II source code V2.52, which is distributed together with
+	    the second edition of Jean J. Labrosse's book. Beginning with port version V2.2, some modifications
+	    were made to make it compile and run with newer uC/OS-II V2.82 too.
+	    You will need Microsoft's C++ compiler to
+	    recompile the WIN32 samples provided here. The port has been developed using
+	    V13.1 of Microsoft's C++ compiler as included in Visual Studio/C++ .NET 2003, but should work
+	    with other versions of this compiler too.
+	</P>
+        <P>
+            Beginning with version V1.5 there is an additional Cygwin GCC version for WIN32 in the GCC-CYGWIN
+            subdirectory. This port was developed with GCC 3.4.4 under Cygwin 1.5.19. All examples do compile and run,
+            however the functions in PC.c / PC.h, which implement some non-standard screen output routines,
+            do not all work as expected. Especially, when you close a program, which used these functions,
+            the original screen format is not completely restored and fragments of the previous screen output
+            remain in the screen buffer. There are no known problems with the uC/OS-II functions of the GCC version.
+            For uC/OS-II V2.82 users must edit the file makefile.cyg in the examples' subdirectory to include
+            an additional define.
+        </P>
+        <P>
+	    In V1.6 the resolution of the time measurement PC_Elapsed... in the Cygwin GCC and LINUX version
+	    was improved. Now these ports also use the Pentium time stamp counter.
+        </P>
+	<P>
+	    In V1.7 OSScheduleThread was modified to detect tasks deleted by OSTaskDel.
+	</P>
+	<P>
+	    In V2.0 the Linux port was adapted to changes in the Linux thread handling in Linux kernel 2.6.x.
+	    Besides minor comment changes in the code, no changes were made in the WIN32 port.
+	</P>
+	<P> V2.1 some include paths were modified to work with uC/OS-II 2.70.
+	</P>
+	<P> V3.0 was modified to be compatible with uC/OS-II 2.8x and some internal functions were modified to make
+	    the code easier to maintain.
+	</P>
+	<P> V3.1 was modified to be compatible with uC/OS-II 2.84 and there were some major changes in the
+	    thread scheduling to make the code compatible with Validated Software's verification suite for
+	    uCOS-II (www.validatedsoftware.com).
+	</P>
+	<P> V3.2 updates mail address and copyright note in source files.
+	</P>
+	<P> V3.3 modified OSTaskDelHook() to avoid memory leakage when deleting tasks.
+	</P>
+	<P> V3.4 was made compatible with Visual Studio .NET 2003 and 2005. uCOS-II sources used are V2.84. The book
+	    version uCOS-II V2.52 is no longer tested.
+	</P>
+	<BR>
+
+
+	<H2>
+	    <A name="Installation"></A>Installation, Running and Recompiling the Samples
+	</H2>
+	<P>
+	    You should <B>unpack</B> the files of the WIN32 port into the uC\OS-II installation directory
+	    (normally "\software\uCOS-II\"), keeping the directory structure of the WIN32 port intact.
+	    If you installed uC/OS-II in "\software\uCOS-II" with uC/OS-II source files in "\software\uCOS-II\source",
+	    you will find the WIN32 port for Visual C++ in "\software\uCOS-II\Ports\80x86\WIN32\VC\" with the source
+	    code of the port files in subdirectory ".\src", some examples under ".\examples\" and some
+	    template files as starting point for your own applications in ".\templates\".
+	</P>
+	<P>
+	    To <B>run</B> one of the samples, CD to the appropriate sample's subdirectory, e.g. ".\examples\example1"
+	    and run the file "test.exe". All sample programs can be stopped by hitting the "ESC" key.
+	    The samples "example1", ..., "example4" are described in Jean J.Labrosse's book in chapter 1.
+	</P>
+	<P>
+	    To <B>recompile</B> one of the samples, go to the appropriate sample's subdirectory and type "nmake -f makefile.vc".
+	    This assumes, that you have opened a console window and the Visual C++ compiler is accessible
+	    via the Windows path and the necessary environment variables are set. Usually this can be done
+	    by running "vcvars32.bat" in the ".\bin" subdirectory of the compiler. If you did not install
+	    uC/OS-II or the WIN32 port as recommended, you may need to edit the sample's "makefile.x", where
+	    paths are set in the makefile variables UCOS_SRC, UCOS_PORT_SRC, UCOS_PORT_LIB and UCOS_PORT_EX.
+	</P>
+	<P>
+	    You can modify an example programs and recompile it
+	    without having installed the uC/OS source code, as long you do not touch the uC/OS-II configuration
+	    in os_cfg.h, because we have included a precompiled version ucos_ii.lib. Unfortunately, Visual Studio's library file format is not compatible across versions. If you
+	    use another Visual Studio version, than we do, you need to recompile everything. A clear indication
+	    of the library version problem is, when you get linker errors complaining about dozends of symbols not found.
+	</P>
+	<P>
+	    The Cygwin GCC port is in "\software\uCOS-II\Ports\80x86\WIN32\GCC-CYGWIN\", using the same subdirectory
+	    structure as the Visual C++ version. To compile the sample, go to the sample's subdirectory and type
+	    'make -f makefile.cyg'. (This assumes, that you have opened a console window with a Cygwin bash shell and a GCC standard
+	    installation). When you have problems with the GCC-CYGWIN port, especially 'undefined reference' or 'file not found'
+            errors, check the filenames, especially the file name extensions. Source and header file extensions must
+            be lower case '.c' and '.h'. All path names in the makefile and in #include directives must use forward slashs '/' rather than
+            backward slashs '\' and all path and file names are case sensitive.
+	</P>
+	<P>
+	    As a starting point for <B>your own applications</B> you may use the template files in
+	    subdirectory "./templates". To get familiar with uC/OS-II read Jean J. Labrosse's book.
+	    To learn about the limitations of the WIN32 port, you should read the section about
+	    <A href="#Internals">WIN32 port internals and limitations</A> in this document.
+	</P>
+	<P>
+	    There are several support functions for displaying characters or strings and measuring
+	    execution times and installing (simulated) "interrupt" service routines on the PC platform,
+	    see PC.c and PC.h in the ".\src" subdirectory.
+	    Where possible, these functions were modeled according to the functions provided
+	    in Jean J. Labrosse's 80x86 real mode port.
+	</P>
+
+	<BR>
+	<HR>
+	<H2>
+	    <A name="Internals"></A>WIN32 Port Internals and Limitations
+	</H2>
+	<UL>
+	    <LI><B>Task Scheduling</B>
+	</UL>
+	<P>
+	    As Windows does not allow application programs to bypass its own scheduler or provide
+	    their own timers and interrupt handlers, uC/OS-II scheduling and task managment functions
+	    must be remapped to WIN32 functions.
+	</P>
+	<P>
+	    uC/OS-II tasks are mapped to Windows WIN32 threads. The mapping is done, when a task
+	    is created in OSTCBInitHook(). Additionally two special WIN32 threads OSScheduleThread()
+	    for thread scheduling handling and OSInterruptThread() for interrupt handling
+	    are created in OSInitHookBegin(). The scheduling and the interrupt thread are created
+	    with the maximum possible WIN32 thread priority. The threads associated with uC/OS-II tasks
+	    are created with a lower WIN32 priority and set to WIN32 suspended state.
+	</P>
+	<P>
+	    When the uC/OS-II scheduler preempts a task and wants to switch context to a new uC/OS-II task,
+	    the uC/OS-II context switch function OSCtxSw() or OSIntCtxSw() triggers the scheduler thread
+	    via a WIN32 event hScheduleEvent. Because the WIN32 scheduling thread OSScheduleThread() has
+	    a higher WIN32 priority than all the WIN32 threads associated with uC/OS-II tasks, Windows will
+	    start the WIN32 scheduling thread immediately. This thread will suspend the WIN32 thread
+	    associated with the preempted uC/OS-II task and resume the WIN32 thread
+	    associated with the new uC/OS-II task. Then the scheduler thread will wait for the next scheduler
+	    event. So always exactly one WIN32 thread associated with a uC/OS-II task will be ready to run,
+	    all other uC/OS-II task associated threads will be in WIN32 suspended state. Thus this WIN32 thread
+	    will be invoked by the Windows operating system's internal
+	    scheduler, once the OSScheduleThread() waits for the next scheduling event, and will remain running
+	    until the uC/OS-II scheduler is invoked the next time and retriggers the OSScheduleThread().
+	</P>
+
+	<UL>
+	    <LI><B>Time Tick Interrupts</B>
+	</UL>
+	<P>
+	    To generate the uC/OS-II time tick, a WIN32 multimedia timer is used. Theoretically this timer
+	    provides a 1ms resolution, however Windows' internal time tick is 10ms, so it cannot be
+	    guarantueed, that the WIN32 thread scheduling can be invoked more frequently. Therefore
+	    your application should set OS_TICKS_PER_SECOND to not more than 100 ticks per second (i.e.
+	    to a tick period of 10ms min.). The timer will be started automatically via OSStartHighRdy()
+	    and OSTimeTickInit(), once your application starts uC/OS-II multitasking by calling OSStart().
+	</P>
+	<P>
+	    The WIN32 multimedia timer periodically triggers
+	    a WIN32 event hInterruptEvent. Due to the triggered event, Windows immediately invokes
+	    the interrupt thread OSInterruptThread(), because this thread has a higher WIN32 thread
+	    priority than all uC/OS-II task related threads. As expected by uC/OS-II, the interrupt thread
+	    calls OSTimeTick(), which may reschedule another uC/OS-II task. Then the interrupt thread
+	    waits for the next interrupt event.
+	</P>
+	<P>
+	    uC/OS-II's critical sections normally disable interrupts. WIN32 application programs, however,
+	    cannot disable interrupts. This issue is resolved by WIN32 suspending the interrupt thread
+	    instead, once a uC/OS-II critical section is entered by OS_ENTER_CRITICAL().
+	</P>
+
+
+	<UL>
+	    <LI><B>Limitations</B>
+	</UL>
+
+	<P>
+	    uC/OS-II provides several <B>hook functions</B> to allow applications to modify the uC/OS-II internal
+	    behaviour. Some of these hook functions are used to interact with the Windows operating
+	    system in the WIN32 port. Thus the following hooks MUST NOT be used by your application:
+
+	</P>
+	    <PRE>
+	    OSInitHookBegin(), OSTCBInitHook(), OSTaskDelHook()
+	    </PRE>
+	<P>
+	    If your application must execute own code when uC/OS-II calls these hooks, you should
+	    add this code in file os_cpu_c.c. The appropriate points are marked in the code by
+	    <PRE>
+	    //ADD YOUR OWN HOOK CODE HERE IF NECESSARY
+	    </PRE>
+	    All other hook functions can be redefined by your application directly if you set OS_HOOKS_EN = 0,
+	    as described in the uC/OS-II documentation. If you hook the idle task via OSIdleTaskHook(), you
+	    should call OS_SLEEP() at the end to give Windows a chance to run non-uC/OS related threads.
+	    Otherwise the CPU may never idle and load my go up to 100%.
+	<P>
+	    uC/OS-II tasks are mapped to WIN32 threads. These threads use their own WIN32 <B>stacks</B> rather
+	    than the 'normal' uC/OS-II task stacks. Stack size
+	    and stack management during context switches are automatically handled by Windows. Nevertheless for
+	    compatibility reasons, when a uC/OS-II task is created, a uC/OS-II stack must be provided. Only a few
+	    bytes of this stack will be initialized, but this stack will not really be used by the running tasks.
+	    If you plan to test your application under WIN32 and then port it to an embedded system, you
+	    ***CANNOT*** use the WIN32 simulation to find out the necessary stack size. Your uC/OS-II WIN32 application
+	    should not rely on the uC/OS-II stack checking and clearing functions and should not use
+	    any stack related programming tricks.
+	</P>
+	<P>
+	    <B>OS_TaskChangePrio()</B> may cause instable operation of the port. The port tries to detect
+	    if a task's priority has been changed dynamically. If you run into problems, try to make this
+	    work more reliable by adding a hook function call. In file OS_TASK.c, function OS_TaskChangePrio()
+	    add the following line near the end of the function:
+<PRE>
+INT8U  OSTaskChangePrio (INT8U oldprio, INT8U newprio)
+{   . . .
+    OSTaskChangePrioHook(oldprio, newprio);   //<<<<< ADDED LINE
+
+    OS_EXIT_CRITICAL();			      //<<<<< Rest of the code is unchanged
+    if (OSRunning == OS_TRUE)
+    {    OS_Sched();
+    }
+    return (OS_ERR_NONE);
+}
+</PRE>
+	<P>
+	    <B>Interrupts</B> are simulated using WIN32 events OSirq1 ... OSirq7. Application programs
+	    can install their own interrupt service routines (for irq=1...7, see pc.c and example0\test.c).
+	    "Interrupts" can be triggered from another program (see utils\irqGenerator.c).
+	</P>
+	<P>
+	    Task <B>timing measurement</B> functions PC_ElapsedStart, PC_ElapsedStop and <B>CPU load estimation</B> done by the
+	    statistic task OS_TaskStat do not work very reliable, as they cannot sense, if the CPU is executing
+	    uC/OS or non-uC/OS related threads. Please note, that in the Cygwin port PCElapsedInit takes about 4 seconds to
+	    measure the CPU speed.
+	</P>
+
+	<BR>
+	<HR>
+	<H2>
+	    <A name="Disclaimer"></A>Disclaimer and Copyright Information
+	</H2>
+	<P>
+	    All files are provided in the hope, that they might be useful, but <STRONG>without any
+	    warranty or support</STRONG>. You may <STRONG>use them on your own risk in
+	    non-commercial applications</STRONG>. Even if this software is provided
+	    free of charge, it is <STRONG>no freeware</STRONG>. It is copyrighted by
+	    Werner.Zimmermann|AT|hs-esslingen.de, but may be freely used for non-commercial
+	    applications. <b>If you do modify the source code and/or implement additional
+	    features, you are expected to provide the author with a copy of your source code
+	    and a description of the changes</b>.
+	</P>
+	<P>
+	    If you want <STRONG>to use this software in commercial applications, contact the
+		author</STRONG>.
+	</P>
+	<P>
+	    In case you have problems, you may email a detailed description of the problem
+	    to Werner.Zimmermann|AT|hs-esslingen.de. But the author does not guarantee, that
+	    he will answer your mail or solve the problem.
+	</P>
+	<P>
+	    There is a WIN32 port on Micrium's web site named WIN32 Simulator, which uses a pretty
+	    similar concept. However, it has limited functionality, e.g. it does not support interrupt
+	    simulation, comes with a simple example only and does
+	    not have the PC.h/PC.c support files.
+	</P>
+	<P>
+	    uC/OS-II, Windows and other product names mentioned here may be
+	    trademarks or registered trademarks of their respective owners.
+	</P>
+	<HR>
+</BODY>
+</HTML>

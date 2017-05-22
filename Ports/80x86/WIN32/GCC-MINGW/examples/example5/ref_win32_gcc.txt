@@ -1,0 +1,1206 @@
+##### uCOS-II V2.84 Port V3.30 for WIN32 #####
+   0: ***** Test Task X with prio 4 First call *****
+   0: ***** Test Task X ***** Creating new task
+   0: ***** Test Task 0 with prio 32 First call *****
+   0: ***** Test Task 0 ***** Creating new task
+   0: ***** Test Task 1 with prio 31 First call *****
+   0: ***** Test Task 1 ***** Creating new task
+   0: ***** Test Task 2 with prio 30 First call *****
+   0: ***** Test Task 2 ***** Creating new task
+   0: ***** Test Task 3 with prio 29 First call *****
+   0: ***** Test Task 3 ***** Creating new task
+   0: ***** Test Task 4 with prio 28 First call *****
+   0: ***** Test Task 4 ***** Creating new task
+   0: ***** Test Task 5 with prio 27 First call *****
+   0: ***** Test Task 5 ***** Creating new task
+   0: ***** Test Task 6 with prio 26 First call *****
+   0: ***** Test Task 6 ***** Creating new task
+   0: ***** Test Task 7 with prio 25 First call *****
+   0: ***** Test Task 7 with prio 25 *****
+   0: ***** Test Task 6 with prio 26 *****
+   0: ***** Test Task 5 with prio 27 *****
+   0: ***** Test Task 4 with prio 28 *****
+   0: ***** Test Task 3 with prio 29 *****
+   0: ***** Test Task 2 with prio 30 *****
+   0: ***** Test Task 1 with prio 31 *****
+   0: ***** Test Task 0 with prio 32 *****
+   1: ***** Test Task X ***** Changing task priorities
+   1: ***** Test Task 0 with prio 32 *****
+   1: ***** Test Task 1 with prio 33 *****
+   1: ***** Test Task 2 with prio 34 *****
+   1: ***** Test Task 3 with prio 35 *****
+   1: ***** Test Task 4 with prio 36 *****
+   1: ***** Test Task 5 with prio 37 *****
+   1: ***** Test Task 6 with prio 38 *****
+   1: ***** Test Task 7 with prio 39 *****
+   2: ***** Test Task X ***** Changing task priorities
+   2: ***** Test Task 7 with prio 25 *****
+   2: ***** Test Task 7 with prio 25 deletes itself*****
+   2: ***** Test Task 6 with prio 26 *****
+   2: ***** Test Task 6 with prio 26 deletes itself*****
+   2: ***** Test Task 5 with prio 27 *****
+   2: ***** Test Task 4 with prio 28 *****
+   2: ***** Test Task 3 with prio 29 *****
+   2: ***** Test Task 2 with prio 30 *****
+   2: ***** Test Task 1 with prio 31 *****
+   2: ***** Test Task 0 with prio 32 *****
+   3: ***** Test Task X ***** Changing task priorities
+   3: ***** Test Task 0 with prio 32 *****
+   3: ***** Test Task 1 with prio 33 *****
+   3: ***** Test Task 2 with prio 34 *****
+   3: ***** Test Task 3 with prio 35 *****
+   3: ***** Test Task 4 with prio 36 *****
+   3: ***** Test Task 5 with prio 37 *****
+   4: ***** Test Task X ***** Changing task priorities
+   4: ***** Test Task 5 with prio 27 *****
+   4: ***** Test Task 4 with prio 28 *****
+   4: ***** Test Task 3 with prio 29 *****
+   4: ***** Test Task 2 with prio 30 *****
+   4: ***** Test Task 1 with prio 31 *****
+   4: ***** Test Task 0 with prio 32 *****
+   5: ***** Test Task X ***** Changing task priorities
+   5: ***** Test Task 0 with prio 32 *****
+   5: ***** Test Task 1 with prio 33 *****
+   5: ***** Test Task 2 with prio 34 *****
+   5: ***** Test Task 3 with prio 35 *****
+   5: ***** Test Task 4 with prio 36 *****
+   5: ***** Test Task 5 with prio 37 *****
+   6: ***** Test Task X ***** Changing task priorities
+   6: ***** Test Task 5 with prio 27 *****
+   6: ***** Test Task 4 with prio 28 *****
+   6: ***** Test Task 3 with prio 29 *****
+   6: ***** Test Task 2 with prio 30 *****
+   6: ***** Test Task 1 with prio 31 *****
+   6: ***** Test Task 0 with prio 32 *****
+   7: ***** Test Task X *****
+   7: ***** Test Task 5 with prio 27 *****
+   7: ***** Test Task 4 with prio 28 *****
+   7: ***** Test Task 3 with prio 29 *****
+   7: ***** Test Task 2 with prio 30 *****
+   7: ***** Test Task 1 with prio 31 *****
+   7: ***** Test Task 0 with prio 32 *****
+   8: ***** Test Task X ***** Deleting tasks 0 ... 7
+   9: ***** Test Task X *****
+  10: ***** Test Task X *****
+  11: ***** Test Task X *****
+  12: ***** Test Task X *****
+  13: ***** Test Task X *****
+  14: ***** Test Task X *****
+  15: ***** Test Task X *****
+  16: ***** Test Task X ***** Creating new task
+  16: ***** Test Task 0 with prio 32 First call *****
+  16: ***** Test Task 0 ***** Creating new task
+  16: ***** Test Task 1 with prio 31 First call *****
+  16: ***** Test Task 1 ***** Creating new task
+  16: ***** Test Task 2 with prio 30 First call *****
+  16: ***** Test Task 2 ***** Creating new task
+  16: ***** Test Task 3 with prio 29 First call *****
+  16: ***** Test Task 3 ***** Creating new task
+  16: ***** Test Task 4 with prio 28 First call *****
+  16: ***** Test Task 4 ***** Creating new task
+  16: ***** Test Task 5 with prio 27 First call *****
+  16: ***** Test Task 5 ***** Creating new task
+  16: ***** Test Task 6 with prio 26 First call *****
+  16: ***** Test Task 6 ***** Creating new task
+  16: ***** Test Task 7 with prio 25 First call *****
+  16: ***** Test Task 7 with prio 25 *****
+  16: ***** Test Task 6 with prio 26 *****
+  16: ***** Test Task 5 with prio 27 *****
+  16: ***** Test Task 4 with prio 28 *****
+  16: ***** Test Task 3 with prio 29 *****
+  16: ***** Test Task 2 with prio 30 *****
+  16: ***** Test Task 1 with prio 31 *****
+  16: ***** Test Task 0 with prio 32 *****
+  17: ***** Test Task X ***** Changing task priorities
+  17: ***** Test Task 0 with prio 32 *****
+  17: ***** Test Task 1 with prio 33 *****
+  17: ***** Test Task 2 with prio 34 *****
+  17: ***** Test Task 3 with prio 35 *****
+  17: ***** Test Task 4 with prio 36 *****
+  17: ***** Test Task 5 with prio 37 *****
+  17: ***** Test Task 6 with prio 38 *****
+  17: ***** Test Task 7 with prio 39 *****
+  18: ***** Test Task X ***** Changing task priorities
+  18: ***** Test Task 7 with prio 25 *****
+  18: ***** Test Task 7 with prio 25 deletes itself*****
+  18: ***** Test Task 6 with prio 26 *****
+  18: ***** Test Task 6 with prio 26 deletes itself*****
+  18: ***** Test Task 5 with prio 27 *****
+  18: ***** Test Task 4 with prio 28 *****
+  18: ***** Test Task 3 with prio 29 *****
+  18: ***** Test Task 2 with prio 30 *****
+  18: ***** Test Task 1 with prio 31 *****
+  18: ***** Test Task 0 with prio 32 *****
+  19: ***** Test Task X ***** Changing task priorities
+  19: ***** Test Task 0 with prio 32 *****
+  19: ***** Test Task 1 with prio 33 *****
+  19: ***** Test Task 2 with prio 34 *****
+  19: ***** Test Task 3 with prio 35 *****
+  19: ***** Test Task 4 with prio 36 *****
+  19: ***** Test Task 5 with prio 37 *****
+  20: ***** Test Task X ***** Changing task priorities
+  20: ***** Test Task 5 with prio 27 *****
+  20: ***** Test Task 4 with prio 28 *****
+  20: ***** Test Task 3 with prio 29 *****
+  20: ***** Test Task 2 with prio 30 *****
+  20: ***** Test Task 1 with prio 31 *****
+  20: ***** Test Task 0 with prio 32 *****
+  21: ***** Test Task X ***** Changing task priorities
+  21: ***** Test Task 0 with prio 32 *****
+  21: ***** Test Task 1 with prio 33 *****
+  21: ***** Test Task 2 with prio 34 *****
+  21: ***** Test Task 3 with prio 35 *****
+  21: ***** Test Task 4 with prio 36 *****
+  21: ***** Test Task 5 with prio 37 *****
+  22: ***** Test Task X ***** Changing task priorities
+  22: ***** Test Task 5 with prio 27 *****
+  22: ***** Test Task 4 with prio 28 *****
+  22: ***** Test Task 3 with prio 29 *****
+  22: ***** Test Task 2 with prio 30 *****
+  22: ***** Test Task 1 with prio 31 *****
+  22: ***** Test Task 0 with prio 32 *****
+  23: ***** Test Task X *****
+  23: ***** Test Task 5 with prio 27 *****
+  23: ***** Test Task 4 with prio 28 *****
+  23: ***** Test Task 3 with prio 29 *****
+  23: ***** Test Task 2 with prio 30 *****
+  23: ***** Test Task 1 with prio 31 *****
+  23: ***** Test Task 0 with prio 32 *****
+  24: ***** Test Task X ***** Deleting tasks 0 ... 7
+  25: ***** Test Task X *****
+  26: ***** Test Task X *****
+  27: ***** Test Task X *****
+  28: ***** Test Task X *****
+  29: ***** Test Task X *****
+  30: ***** Test Task X *****
+  31: ***** Test Task X *****
+  32: ***** Test Task X ***** Creating new task
+  32: ***** Test Task 0 with prio 32 First call *****
+  32: ***** Test Task 0 ***** Creating new task
+  32: ***** Test Task 1 with prio 31 First call *****
+  32: ***** Test Task 1 ***** Creating new task
+  32: ***** Test Task 2 with prio 30 First call *****
+  32: ***** Test Task 2 ***** Creating new task
+  32: ***** Test Task 3 with prio 29 First call *****
+  32: ***** Test Task 3 ***** Creating new task
+  32: ***** Test Task 4 with prio 28 First call *****
+  32: ***** Test Task 4 ***** Creating new task
+  32: ***** Test Task 5 with prio 27 First call *****
+  32: ***** Test Task 5 ***** Creating new task
+  32: ***** Test Task 6 with prio 26 First call *****
+  32: ***** Test Task 6 ***** Creating new task
+  32: ***** Test Task 7 with prio 25 First call *****
+  32: ***** Test Task 7 with prio 25 *****
+  32: ***** Test Task 6 with prio 26 *****
+  32: ***** Test Task 5 with prio 27 *****
+  32: ***** Test Task 4 with prio 28 *****
+  32: ***** Test Task 3 with prio 29 *****
+  32: ***** Test Task 2 with prio 30 *****
+  32: ***** Test Task 1 with prio 31 *****
+  32: ***** Test Task 0 with prio 32 *****
+  33: ***** Test Task X ***** Changing task priorities
+  33: ***** Test Task 0 with prio 32 *****
+  33: ***** Test Task 1 with prio 33 *****
+  33: ***** Test Task 2 with prio 34 *****
+  33: ***** Test Task 3 with prio 35 *****
+  33: ***** Test Task 4 with prio 36 *****
+  33: ***** Test Task 5 with prio 37 *****
+  33: ***** Test Task 6 with prio 38 *****
+  33: ***** Test Task 7 with prio 39 *****
+  34: ***** Test Task X ***** Changing task priorities
+  34: ***** Test Task 7 with prio 25 *****
+  34: ***** Test Task 7 with prio 25 deletes itself*****
+  34: ***** Test Task 6 with prio 26 *****
+  34: ***** Test Task 6 with prio 26 deletes itself*****
+  34: ***** Test Task 5 with prio 27 *****
+  34: ***** Test Task 4 with prio 28 *****
+  34: ***** Test Task 3 with prio 29 *****
+  34: ***** Test Task 2 with prio 30 *****
+  34: ***** Test Task 1 with prio 31 *****
+  34: ***** Test Task 0 with prio 32 *****
+  35: ***** Test Task X ***** Changing task priorities
+  35: ***** Test Task 0 with prio 32 *****
+  35: ***** Test Task 1 with prio 33 *****
+  35: ***** Test Task 2 with prio 34 *****
+  35: ***** Test Task 3 with prio 35 *****
+  35: ***** Test Task 4 with prio 36 *****
+  35: ***** Test Task 5 with prio 37 *****
+  36: ***** Test Task X ***** Changing task priorities
+  36: ***** Test Task 5 with prio 27 *****
+  36: ***** Test Task 4 with prio 28 *****
+  36: ***** Test Task 3 with prio 29 *****
+  36: ***** Test Task 2 with prio 30 *****
+  36: ***** Test Task 1 with prio 31 *****
+  36: ***** Test Task 0 with prio 32 *****
+  37: ***** Test Task X ***** Changing task priorities
+  37: ***** Test Task 0 with prio 32 *****
+  37: ***** Test Task 1 with prio 33 *****
+  37: ***** Test Task 2 with prio 34 *****
+  37: ***** Test Task 3 with prio 35 *****
+  37: ***** Test Task 4 with prio 36 *****
+  37: ***** Test Task 5 with prio 37 *****
+  38: ***** Test Task X ***** Changing task priorities
+  38: ***** Test Task 5 with prio 27 *****
+  38: ***** Test Task 4 with prio 28 *****
+  38: ***** Test Task 3 with prio 29 *****
+  38: ***** Test Task 2 with prio 30 *****
+  38: ***** Test Task 1 with prio 31 *****
+  38: ***** Test Task 0 with prio 32 *****
+  39: ***** Test Task X *****
+  39: ***** Test Task 5 with prio 27 *****
+  39: ***** Test Task 4 with prio 28 *****
+  39: ***** Test Task 3 with prio 29 *****
+  39: ***** Test Task 2 with prio 30 *****
+  39: ***** Test Task 1 with prio 31 *****
+  39: ***** Test Task 0 with prio 32 *****
+  40: ***** Test Task X ***** Deleting tasks 0 ... 7
+  41: ***** Test Task X *****
+  42: ***** Test Task X *****
+  43: ***** Test Task X *****
+  44: ***** Test Task X *****
+  45: ***** Test Task X *****
+  46: ***** Test Task X *****
+  47: ***** Test Task X *****
+  48: ***** Test Task X ***** Creating new task
+  48: ***** Test Task 0 with prio 32 First call *****
+  48: ***** Test Task 0 ***** Creating new task
+  48: ***** Test Task 1 with prio 31 First call *****
+  48: ***** Test Task 1 ***** Creating new task
+  48: ***** Test Task 2 with prio 30 First call *****
+  48: ***** Test Task 2 ***** Creating new task
+  48: ***** Test Task 3 with prio 29 First call *****
+  48: ***** Test Task 3 ***** Creating new task
+  48: ***** Test Task 4 with prio 28 First call *****
+  48: ***** Test Task 4 ***** Creating new task
+  48: ***** Test Task 5 with prio 27 First call *****
+  48: ***** Test Task 5 ***** Creating new task
+  48: ***** Test Task 6 with prio 26 First call *****
+  48: ***** Test Task 6 ***** Creating new task
+  48: ***** Test Task 7 with prio 25 First call *****
+  48: ***** Test Task 7 with prio 25 *****
+  48: ***** Test Task 6 with prio 26 *****
+  48: ***** Test Task 5 with prio 27 *****
+  48: ***** Test Task 4 with prio 28 *****
+  48: ***** Test Task 3 with prio 29 *****
+  48: ***** Test Task 2 with prio 30 *****
+  48: ***** Test Task 1 with prio 31 *****
+  48: ***** Test Task 0 with prio 32 *****
+  49: ***** Test Task X ***** Changing task priorities
+  49: ***** Test Task 0 with prio 32 *****
+  49: ***** Test Task 1 with prio 33 *****
+  49: ***** Test Task 2 with prio 34 *****
+  49: ***** Test Task 3 with prio 35 *****
+  49: ***** Test Task 4 with prio 36 *****
+  49: ***** Test Task 5 with prio 37 *****
+  49: ***** Test Task 6 with prio 38 *****
+  49: ***** Test Task 7 with prio 39 *****
+  50: ***** Test Task X ***** Changing task priorities
+  50: ***** Test Task 7 with prio 25 *****
+  50: ***** Test Task 7 with prio 25 deletes itself*****
+  50: ***** Test Task 6 with prio 26 *****
+  50: ***** Test Task 6 with prio 26 deletes itself*****
+  50: ***** Test Task 5 with prio 27 *****
+  50: ***** Test Task 4 with prio 28 *****
+  50: ***** Test Task 3 with prio 29 *****
+  50: ***** Test Task 2 with prio 30 *****
+  50: ***** Test Task 1 with prio 31 *****
+  50: ***** Test Task 0 with prio 32 *****
+  51: ***** Test Task X ***** Changing task priorities
+  51: ***** Test Task 0 with prio 32 *****
+  51: ***** Test Task 1 with prio 33 *****
+  51: ***** Test Task 2 with prio 34 *****
+  51: ***** Test Task 3 with prio 35 *****
+  51: ***** Test Task 4 with prio 36 *****
+  51: ***** Test Task 5 with prio 37 *****
+  52: ***** Test Task X ***** Changing task priorities
+  52: ***** Test Task 5 with prio 27 *****
+  52: ***** Test Task 4 with prio 28 *****
+  52: ***** Test Task 3 with prio 29 *****
+  52: ***** Test Task 2 with prio 30 *****
+  52: ***** Test Task 1 with prio 31 *****
+  52: ***** Test Task 0 with prio 32 *****
+  53: ***** Test Task X ***** Changing task priorities
+  53: ***** Test Task 0 with prio 32 *****
+  53: ***** Test Task 1 with prio 33 *****
+  53: ***** Test Task 2 with prio 34 *****
+  53: ***** Test Task 3 with prio 35 *****
+  53: ***** Test Task 4 with prio 36 *****
+  53: ***** Test Task 5 with prio 37 *****
+  54: ***** Test Task X ***** Changing task priorities
+  54: ***** Test Task 5 with prio 27 *****
+  54: ***** Test Task 4 with prio 28 *****
+  54: ***** Test Task 3 with prio 29 *****
+  54: ***** Test Task 2 with prio 30 *****
+  54: ***** Test Task 1 with prio 31 *****
+  54: ***** Test Task 0 with prio 32 *****
+  55: ***** Test Task X *****
+  55: ***** Test Task 5 with prio 27 *****
+  55: ***** Test Task 4 with prio 28 *****
+  55: ***** Test Task 3 with prio 29 *****
+  55: ***** Test Task 2 with prio 30 *****
+  55: ***** Test Task 1 with prio 31 *****
+  55: ***** Test Task 0 with prio 32 *****
+  56: ***** Test Task X ***** Deleting tasks 0 ... 7
+  57: ***** Test Task X *****
+  58: ***** Test Task X *****
+  59: ***** Test Task X *****
+  60: ***** Test Task X *****
+  61: ***** Test Task X *****
+  62: ***** Test Task X *****
+  63: ***** Test Task X *****
+  64: ***** Test Task X ***** Creating new task
+  64: ***** Test Task 0 with prio 32 First call *****
+  64: ***** Test Task 0 ***** Creating new task
+  64: ***** Test Task 1 with prio 31 First call *****
+  64: ***** Test Task 1 ***** Creating new task
+  64: ***** Test Task 2 with prio 30 First call *****
+  64: ***** Test Task 2 ***** Creating new task
+  64: ***** Test Task 3 with prio 29 First call *****
+  64: ***** Test Task 3 ***** Creating new task
+  64: ***** Test Task 4 with prio 28 First call *****
+  64: ***** Test Task 4 ***** Creating new task
+  64: ***** Test Task 5 with prio 27 First call *****
+  64: ***** Test Task 5 ***** Creating new task
+  64: ***** Test Task 6 with prio 26 First call *****
+  64: ***** Test Task 6 ***** Creating new task
+  64: ***** Test Task 7 with prio 25 First call *****
+  64: ***** Test Task 7 with prio 25 *****
+  64: ***** Test Task 6 with prio 26 *****
+  64: ***** Test Task 5 with prio 27 *****
+  64: ***** Test Task 4 with prio 28 *****
+  64: ***** Test Task 3 with prio 29 *****
+  64: ***** Test Task 2 with prio 30 *****
+  64: ***** Test Task 1 with prio 31 *****
+  64: ***** Test Task 0 with prio 32 *****
+  65: ***** Test Task X ***** Changing task priorities
+  65: ***** Test Task 0 with prio 32 *****
+  65: ***** Test Task 1 with prio 33 *****
+  65: ***** Test Task 2 with prio 34 *****
+  65: ***** Test Task 3 with prio 35 *****
+  65: ***** Test Task 4 with prio 36 *****
+  65: ***** Test Task 5 with prio 37 *****
+  65: ***** Test Task 6 with prio 38 *****
+  65: ***** Test Task 7 with prio 39 *****
+  66: ***** Test Task X ***** Changing task priorities
+  66: ***** Test Task 7 with prio 25 *****
+  66: ***** Test Task 7 with prio 25 deletes itself*****
+  66: ***** Test Task 6 with prio 26 *****
+  66: ***** Test Task 6 with prio 26 deletes itself*****
+  66: ***** Test Task 5 with prio 27 *****
+  66: ***** Test Task 4 with prio 28 *****
+  66: ***** Test Task 3 with prio 29 *****
+  66: ***** Test Task 2 with prio 30 *****
+  66: ***** Test Task 1 with prio 31 *****
+  66: ***** Test Task 0 with prio 32 *****
+  67: ***** Test Task X ***** Changing task priorities
+  67: ***** Test Task 0 with prio 32 *****
+  67: ***** Test Task 1 with prio 33 *****
+  67: ***** Test Task 2 with prio 34 *****
+  67: ***** Test Task 3 with prio 35 *****
+  67: ***** Test Task 4 with prio 36 *****
+  67: ***** Test Task 5 with prio 37 *****
+  68: ***** Test Task X ***** Changing task priorities
+  68: ***** Test Task 5 with prio 27 *****
+  68: ***** Test Task 4 with prio 28 *****
+  68: ***** Test Task 3 with prio 29 *****
+  68: ***** Test Task 2 with prio 30 *****
+  68: ***** Test Task 1 with prio 31 *****
+  68: ***** Test Task 0 with prio 32 *****
+  69: ***** Test Task X ***** Changing task priorities
+  69: ***** Test Task 0 with prio 32 *****
+  69: ***** Test Task 1 with prio 33 *****
+  69: ***** Test Task 2 with prio 34 *****
+  69: ***** Test Task 3 with prio 35 *****
+  69: ***** Test Task 4 with prio 36 *****
+  69: ***** Test Task 5 with prio 37 *****
+  70: ***** Test Task X ***** Changing task priorities
+  70: ***** Test Task 5 with prio 27 *****
+  70: ***** Test Task 4 with prio 28 *****
+  70: ***** Test Task 3 with prio 29 *****
+  70: ***** Test Task 2 with prio 30 *****
+  70: ***** Test Task 1 with prio 31 *****
+  70: ***** Test Task 0 with prio 32 *****
+  71: ***** Test Task X *****
+  71: ***** Test Task 5 with prio 27 *****
+  71: ***** Test Task 4 with prio 28 *****
+  71: ***** Test Task 3 with prio 29 *****
+  71: ***** Test Task 2 with prio 30 *****
+  71: ***** Test Task 1 with prio 31 *****
+  71: ***** Test Task 0 with prio 32 *****
+  72: ***** Test Task X ***** Deleting tasks 0 ... 7
+  73: ***** Test Task X *****
+  74: ***** Test Task X *****
+  75: ***** Test Task X *****
+  76: ***** Test Task X *****
+  77: ***** Test Task X *****
+  78: ***** Test Task X *****
+  79: ***** Test Task X *****
+  80: ***** Test Task X ***** Creating new task
+  80: ***** Test Task 0 with prio 32 First call *****
+  80: ***** Test Task 0 ***** Creating new task
+  80: ***** Test Task 1 with prio 31 First call *****
+  80: ***** Test Task 1 ***** Creating new task
+  80: ***** Test Task 2 with prio 30 First call *****
+  80: ***** Test Task 2 ***** Creating new task
+  80: ***** Test Task 3 with prio 29 First call *****
+  80: ***** Test Task 3 ***** Creating new task
+  80: ***** Test Task 4 with prio 28 First call *****
+  80: ***** Test Task 4 ***** Creating new task
+  80: ***** Test Task 5 with prio 27 First call *****
+  80: ***** Test Task 5 ***** Creating new task
+  80: ***** Test Task 6 with prio 26 First call *****
+  80: ***** Test Task 6 ***** Creating new task
+  80: ***** Test Task 7 with prio 25 First call *****
+  80: ***** Test Task 7 with prio 25 *****
+  80: ***** Test Task 6 with prio 26 *****
+  80: ***** Test Task 5 with prio 27 *****
+  80: ***** Test Task 4 with prio 28 *****
+  80: ***** Test Task 3 with prio 29 *****
+  80: ***** Test Task 2 with prio 30 *****
+  80: ***** Test Task 1 with prio 31 *****
+  80: ***** Test Task 0 with prio 32 *****
+  81: ***** Test Task X ***** Changing task priorities
+  81: ***** Test Task 0 with prio 32 *****
+  81: ***** Test Task 1 with prio 33 *****
+  81: ***** Test Task 2 with prio 34 *****
+  81: ***** Test Task 3 with prio 35 *****
+  81: ***** Test Task 4 with prio 36 *****
+  81: ***** Test Task 5 with prio 37 *****
+  81: ***** Test Task 6 with prio 38 *****
+  81: ***** Test Task 7 with prio 39 *****
+  82: ***** Test Task X ***** Changing task priorities
+  82: ***** Test Task 7 with prio 25 *****
+  82: ***** Test Task 7 with prio 25 deletes itself*****
+  82: ***** Test Task 6 with prio 26 *****
+  82: ***** Test Task 6 with prio 26 deletes itself*****
+  82: ***** Test Task 5 with prio 27 *****
+  82: ***** Test Task 4 with prio 28 *****
+  82: ***** Test Task 3 with prio 29 *****
+  82: ***** Test Task 2 with prio 30 *****
+  82: ***** Test Task 1 with prio 31 *****
+  82: ***** Test Task 0 with prio 32 *****
+  83: ***** Test Task X ***** Changing task priorities
+  83: ***** Test Task 0 with prio 32 *****
+  83: ***** Test Task 1 with prio 33 *****
+  83: ***** Test Task 2 with prio 34 *****
+  83: ***** Test Task 3 with prio 35 *****
+  83: ***** Test Task 4 with prio 36 *****
+  83: ***** Test Task 5 with prio 37 *****
+  84: ***** Test Task X ***** Changing task priorities
+  84: ***** Test Task 5 with prio 27 *****
+  84: ***** Test Task 4 with prio 28 *****
+  84: ***** Test Task 3 with prio 29 *****
+  84: ***** Test Task 2 with prio 30 *****
+  84: ***** Test Task 1 with prio 31 *****
+  84: ***** Test Task 0 with prio 32 *****
+  85: ***** Test Task X ***** Changing task priorities
+  85: ***** Test Task 0 with prio 32 *****
+  85: ***** Test Task 1 with prio 33 *****
+  85: ***** Test Task 2 with prio 34 *****
+  85: ***** Test Task 3 with prio 35 *****
+  85: ***** Test Task 4 with prio 36 *****
+  85: ***** Test Task 5 with prio 37 *****
+  86: ***** Test Task X ***** Changing task priorities
+  86: ***** Test Task 5 with prio 27 *****
+  86: ***** Test Task 4 with prio 28 *****
+  86: ***** Test Task 3 with prio 29 *****
+  86: ***** Test Task 2 with prio 30 *****
+  86: ***** Test Task 1 with prio 31 *****
+  86: ***** Test Task 0 with prio 32 *****
+  87: ***** Test Task X *****
+  87: ***** Test Task 5 with prio 27 *****
+  87: ***** Test Task 4 with prio 28 *****
+  87: ***** Test Task 3 with prio 29 *****
+  87: ***** Test Task 2 with prio 30 *****
+  87: ***** Test Task 1 with prio 31 *****
+  87: ***** Test Task 0 with prio 32 *****
+  88: ***** Test Task X ***** Deleting tasks 0 ... 7
+  89: ***** Test Task X *****
+  90: ***** Test Task X *****
+  91: ***** Test Task X *****
+  92: ***** Test Task X *****
+  93: ***** Test Task X *****
+  94: ***** Test Task X *****
+  95: ***** Test Task X *****
+  96: ***** Test Task X ***** Creating new task
+  96: ***** Test Task 0 with prio 32 First call *****
+  96: ***** Test Task 0 ***** Creating new task
+  96: ***** Test Task 1 with prio 31 First call *****
+  96: ***** Test Task 1 ***** Creating new task
+  96: ***** Test Task 2 with prio 30 First call *****
+  96: ***** Test Task 2 ***** Creating new task
+  96: ***** Test Task 3 with prio 29 First call *****
+  96: ***** Test Task 3 ***** Creating new task
+  96: ***** Test Task 4 with prio 28 First call *****
+  96: ***** Test Task 4 ***** Creating new task
+  96: ***** Test Task 5 with prio 27 First call *****
+  96: ***** Test Task 5 ***** Creating new task
+  96: ***** Test Task 6 with prio 26 First call *****
+  96: ***** Test Task 6 ***** Creating new task
+  96: ***** Test Task 7 with prio 25 First call *****
+  96: ***** Test Task 7 with prio 25 *****
+  96: ***** Test Task 6 with prio 26 *****
+  96: ***** Test Task 5 with prio 27 *****
+  96: ***** Test Task 4 with prio 28 *****
+  96: ***** Test Task 3 with prio 29 *****
+  96: ***** Test Task 2 with prio 30 *****
+  96: ***** Test Task 1 with prio 31 *****
+  96: ***** Test Task 0 with prio 32 *****
+  97: ***** Test Task X ***** Changing task priorities
+  97: ***** Test Task 0 with prio 32 *****
+  97: ***** Test Task 1 with prio 33 *****
+  97: ***** Test Task 2 with prio 34 *****
+  97: ***** Test Task 3 with prio 35 *****
+  97: ***** Test Task 4 with prio 36 *****
+  97: ***** Test Task 5 with prio 37 *****
+  97: ***** Test Task 6 with prio 38 *****
+  97: ***** Test Task 7 with prio 39 *****
+  98: ***** Test Task X ***** Changing task priorities
+  98: ***** Test Task 7 with prio 25 *****
+  98: ***** Test Task 7 with prio 25 deletes itself*****
+  98: ***** Test Task 6 with prio 26 *****
+  98: ***** Test Task 6 with prio 26 deletes itself*****
+  98: ***** Test Task 5 with prio 27 *****
+  98: ***** Test Task 4 with prio 28 *****
+  98: ***** Test Task 3 with prio 29 *****
+  98: ***** Test Task 2 with prio 30 *****
+  98: ***** Test Task 1 with prio 31 *****
+  98: ***** Test Task 0 with prio 32 *****
+  99: ***** Test Task X ***** Changing task priorities
+  99: ***** Test Task 0 with prio 32 *****
+  99: ***** Test Task 1 with prio 33 *****
+  99: ***** Test Task 2 with prio 34 *****
+  99: ***** Test Task 3 with prio 35 *****
+  99: ***** Test Task 4 with prio 36 *****
+  99: ***** Test Task 5 with prio 37 *****
+ 100: ***** Test Task X ***** Changing task priorities
+ 100: ***** Test Task 5 with prio 27 *****
+ 100: ***** Test Task 4 with prio 28 *****
+ 100: ***** Test Task 3 with prio 29 *****
+ 100: ***** Test Task 2 with prio 30 *****
+ 100: ***** Test Task 1 with prio 31 *****
+ 100: ***** Test Task 0 with prio 32 *****
+ 101: ***** Test Task X ***** Changing task priorities
+ 101: ***** Test Task 0 with prio 32 *****
+ 101: ***** Test Task 1 with prio 33 *****
+ 101: ***** Test Task 2 with prio 34 *****
+ 101: ***** Test Task 3 with prio 35 *****
+ 101: ***** Test Task 4 with prio 36 *****
+ 101: ***** Test Task 5 with prio 37 *****
+ 102: ***** Test Task X ***** Changing task priorities
+ 102: ***** Test Task 5 with prio 27 *****
+ 102: ***** Test Task 4 with prio 28 *****
+ 102: ***** Test Task 3 with prio 29 *****
+ 102: ***** Test Task 2 with prio 30 *****
+ 102: ***** Test Task 1 with prio 31 *****
+ 102: ***** Test Task 0 with prio 32 *****
+ 103: ***** Test Task X *****
+ 103: ***** Test Task 5 with prio 27 *****
+ 103: ***** Test Task 4 with prio 28 *****
+ 103: ***** Test Task 3 with prio 29 *****
+ 103: ***** Test Task 2 with prio 30 *****
+ 103: ***** Test Task 1 with prio 31 *****
+ 103: ***** Test Task 0 with prio 32 *****
+ 104: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 105: ***** Test Task X *****
+ 106: ***** Test Task X *****
+ 107: ***** Test Task X *****
+ 108: ***** Test Task X *****
+ 109: ***** Test Task X *****
+ 110: ***** Test Task X *****
+ 111: ***** Test Task X *****
+ 112: ***** Test Task X ***** Creating new task
+ 112: ***** Test Task 0 with prio 32 First call *****
+ 112: ***** Test Task 0 ***** Creating new task
+ 112: ***** Test Task 1 with prio 31 First call *****
+ 112: ***** Test Task 1 ***** Creating new task
+ 112: ***** Test Task 2 with prio 30 First call *****
+ 112: ***** Test Task 2 ***** Creating new task
+ 112: ***** Test Task 3 with prio 29 First call *****
+ 112: ***** Test Task 3 ***** Creating new task
+ 112: ***** Test Task 4 with prio 28 First call *****
+ 112: ***** Test Task 4 ***** Creating new task
+ 112: ***** Test Task 5 with prio 27 First call *****
+ 112: ***** Test Task 5 ***** Creating new task
+ 112: ***** Test Task 6 with prio 26 First call *****
+ 112: ***** Test Task 6 ***** Creating new task
+ 112: ***** Test Task 7 with prio 25 First call *****
+ 112: ***** Test Task 7 with prio 25 *****
+ 112: ***** Test Task 6 with prio 26 *****
+ 112: ***** Test Task 5 with prio 27 *****
+ 112: ***** Test Task 4 with prio 28 *****
+ 112: ***** Test Task 3 with prio 29 *****
+ 112: ***** Test Task 2 with prio 30 *****
+ 112: ***** Test Task 1 with prio 31 *****
+ 112: ***** Test Task 0 with prio 32 *****
+ 113: ***** Test Task X ***** Changing task priorities
+ 113: ***** Test Task 0 with prio 32 *****
+ 113: ***** Test Task 1 with prio 33 *****
+ 113: ***** Test Task 2 with prio 34 *****
+ 113: ***** Test Task 3 with prio 35 *****
+ 113: ***** Test Task 4 with prio 36 *****
+ 113: ***** Test Task 5 with prio 37 *****
+ 113: ***** Test Task 6 with prio 38 *****
+ 113: ***** Test Task 7 with prio 39 *****
+ 114: ***** Test Task X ***** Changing task priorities
+ 114: ***** Test Task 7 with prio 25 *****
+ 114: ***** Test Task 7 with prio 25 deletes itself*****
+ 114: ***** Test Task 6 with prio 26 *****
+ 114: ***** Test Task 6 with prio 26 deletes itself*****
+ 114: ***** Test Task 5 with prio 27 *****
+ 114: ***** Test Task 4 with prio 28 *****
+ 114: ***** Test Task 3 with prio 29 *****
+ 114: ***** Test Task 2 with prio 30 *****
+ 114: ***** Test Task 1 with prio 31 *****
+ 114: ***** Test Task 0 with prio 32 *****
+ 115: ***** Test Task X ***** Changing task priorities
+ 115: ***** Test Task 0 with prio 32 *****
+ 115: ***** Test Task 1 with prio 33 *****
+ 115: ***** Test Task 2 with prio 34 *****
+ 115: ***** Test Task 3 with prio 35 *****
+ 115: ***** Test Task 4 with prio 36 *****
+ 115: ***** Test Task 5 with prio 37 *****
+ 116: ***** Test Task X ***** Changing task priorities
+ 116: ***** Test Task 5 with prio 27 *****
+ 116: ***** Test Task 4 with prio 28 *****
+ 116: ***** Test Task 3 with prio 29 *****
+ 116: ***** Test Task 2 with prio 30 *****
+ 116: ***** Test Task 1 with prio 31 *****
+ 116: ***** Test Task 0 with prio 32 *****
+ 117: ***** Test Task X ***** Changing task priorities
+ 117: ***** Test Task 0 with prio 32 *****
+ 117: ***** Test Task 1 with prio 33 *****
+ 117: ***** Test Task 2 with prio 34 *****
+ 117: ***** Test Task 3 with prio 35 *****
+ 117: ***** Test Task 4 with prio 36 *****
+ 117: ***** Test Task 5 with prio 37 *****
+ 118: ***** Test Task X ***** Changing task priorities
+ 118: ***** Test Task 5 with prio 27 *****
+ 118: ***** Test Task 4 with prio 28 *****
+ 118: ***** Test Task 3 with prio 29 *****
+ 118: ***** Test Task 2 with prio 30 *****
+ 118: ***** Test Task 1 with prio 31 *****
+ 118: ***** Test Task 0 with prio 32 *****
+ 119: ***** Test Task X *****
+ 119: ***** Test Task 5 with prio 27 *****
+ 119: ***** Test Task 4 with prio 28 *****
+ 119: ***** Test Task 3 with prio 29 *****
+ 119: ***** Test Task 2 with prio 30 *****
+ 119: ***** Test Task 1 with prio 31 *****
+ 119: ***** Test Task 0 with prio 32 *****
+ 120: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 121: ***** Test Task X *****
+ 122: ***** Test Task X *****
+ 123: ***** Test Task X *****
+ 124: ***** Test Task X *****
+ 125: ***** Test Task X *****
+ 126: ***** Test Task X *****
+ 127: ***** Test Task X *****
+ 128: ***** Test Task X ***** Creating new task
+ 128: ***** Test Task 0 with prio 32 First call *****
+ 128: ***** Test Task 0 ***** Creating new task
+ 128: ***** Test Task 1 with prio 31 First call *****
+ 128: ***** Test Task 1 ***** Creating new task
+ 128: ***** Test Task 2 with prio 30 First call *****
+ 128: ***** Test Task 2 ***** Creating new task
+ 128: ***** Test Task 3 with prio 29 First call *****
+ 128: ***** Test Task 3 ***** Creating new task
+ 128: ***** Test Task 4 with prio 28 First call *****
+ 128: ***** Test Task 4 ***** Creating new task
+ 128: ***** Test Task 5 with prio 27 First call *****
+ 128: ***** Test Task 5 ***** Creating new task
+ 128: ***** Test Task 6 with prio 26 First call *****
+ 128: ***** Test Task 6 ***** Creating new task
+ 128: ***** Test Task 7 with prio 25 First call *****
+ 128: ***** Test Task 7 with prio 25 *****
+ 128: ***** Test Task 6 with prio 26 *****
+ 128: ***** Test Task 5 with prio 27 *****
+ 128: ***** Test Task 4 with prio 28 *****
+ 128: ***** Test Task 3 with prio 29 *****
+ 128: ***** Test Task 2 with prio 30 *****
+ 128: ***** Test Task 1 with prio 31 *****
+ 128: ***** Test Task 0 with prio 32 *****
+ 129: ***** Test Task X ***** Changing task priorities
+ 129: ***** Test Task 0 with prio 32 *****
+ 129: ***** Test Task 1 with prio 33 *****
+ 129: ***** Test Task 2 with prio 34 *****
+ 129: ***** Test Task 3 with prio 35 *****
+ 129: ***** Test Task 4 with prio 36 *****
+ 129: ***** Test Task 5 with prio 37 *****
+ 129: ***** Test Task 6 with prio 38 *****
+ 129: ***** Test Task 7 with prio 39 *****
+ 130: ***** Test Task X ***** Changing task priorities
+ 130: ***** Test Task 7 with prio 25 *****
+ 130: ***** Test Task 7 with prio 25 deletes itself*****
+ 130: ***** Test Task 6 with prio 26 *****
+ 130: ***** Test Task 6 with prio 26 deletes itself*****
+ 130: ***** Test Task 5 with prio 27 *****
+ 130: ***** Test Task 4 with prio 28 *****
+ 130: ***** Test Task 3 with prio 29 *****
+ 130: ***** Test Task 2 with prio 30 *****
+ 130: ***** Test Task 1 with prio 31 *****
+ 130: ***** Test Task 0 with prio 32 *****
+ 131: ***** Test Task X ***** Changing task priorities
+ 131: ***** Test Task 0 with prio 32 *****
+ 131: ***** Test Task 1 with prio 33 *****
+ 131: ***** Test Task 2 with prio 34 *****
+ 131: ***** Test Task 3 with prio 35 *****
+ 131: ***** Test Task 4 with prio 36 *****
+ 131: ***** Test Task 5 with prio 37 *****
+ 132: ***** Test Task X ***** Changing task priorities
+ 132: ***** Test Task 5 with prio 27 *****
+ 132: ***** Test Task 4 with prio 28 *****
+ 132: ***** Test Task 3 with prio 29 *****
+ 132: ***** Test Task 2 with prio 30 *****
+ 132: ***** Test Task 1 with prio 31 *****
+ 132: ***** Test Task 0 with prio 32 *****
+ 133: ***** Test Task X ***** Changing task priorities
+ 133: ***** Test Task 0 with prio 32 *****
+ 133: ***** Test Task 1 with prio 33 *****
+ 133: ***** Test Task 2 with prio 34 *****
+ 133: ***** Test Task 3 with prio 35 *****
+ 133: ***** Test Task 4 with prio 36 *****
+ 133: ***** Test Task 5 with prio 37 *****
+ 134: ***** Test Task X ***** Changing task priorities
+ 134: ***** Test Task 5 with prio 27 *****
+ 134: ***** Test Task 4 with prio 28 *****
+ 134: ***** Test Task 3 with prio 29 *****
+ 134: ***** Test Task 2 with prio 30 *****
+ 134: ***** Test Task 1 with prio 31 *****
+ 134: ***** Test Task 0 with prio 32 *****
+ 135: ***** Test Task X *****
+ 135: ***** Test Task 5 with prio 27 *****
+ 135: ***** Test Task 4 with prio 28 *****
+ 135: ***** Test Task 3 with prio 29 *****
+ 135: ***** Test Task 2 with prio 30 *****
+ 135: ***** Test Task 1 with prio 31 *****
+ 135: ***** Test Task 0 with prio 32 *****
+ 136: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 137: ***** Test Task X *****
+ 138: ***** Test Task X *****
+ 139: ***** Test Task X *****
+ 140: ***** Test Task X *****
+ 141: ***** Test Task X *****
+ 142: ***** Test Task X *****
+ 143: ***** Test Task X *****
+ 144: ***** Test Task X ***** Creating new task
+ 144: ***** Test Task 0 with prio 32 First call *****
+ 144: ***** Test Task 0 ***** Creating new task
+ 144: ***** Test Task 1 with prio 31 First call *****
+ 144: ***** Test Task 1 ***** Creating new task
+ 144: ***** Test Task 2 with prio 30 First call *****
+ 144: ***** Test Task 2 ***** Creating new task
+ 144: ***** Test Task 3 with prio 29 First call *****
+ 144: ***** Test Task 3 ***** Creating new task
+ 144: ***** Test Task 4 with prio 28 First call *****
+ 144: ***** Test Task 4 ***** Creating new task
+ 144: ***** Test Task 5 with prio 27 First call *****
+ 144: ***** Test Task 5 ***** Creating new task
+ 144: ***** Test Task 6 with prio 26 First call *****
+ 144: ***** Test Task 6 ***** Creating new task
+ 144: ***** Test Task 7 with prio 25 First call *****
+ 144: ***** Test Task 7 with prio 25 *****
+ 144: ***** Test Task 6 with prio 26 *****
+ 144: ***** Test Task 5 with prio 27 *****
+ 144: ***** Test Task 4 with prio 28 *****
+ 144: ***** Test Task 3 with prio 29 *****
+ 144: ***** Test Task 2 with prio 30 *****
+ 144: ***** Test Task 1 with prio 31 *****
+ 144: ***** Test Task 0 with prio 32 *****
+ 145: ***** Test Task X ***** Changing task priorities
+ 145: ***** Test Task 0 with prio 32 *****
+ 145: ***** Test Task 1 with prio 33 *****
+ 145: ***** Test Task 2 with prio 34 *****
+ 145: ***** Test Task 3 with prio 35 *****
+ 145: ***** Test Task 4 with prio 36 *****
+ 145: ***** Test Task 5 with prio 37 *****
+ 145: ***** Test Task 6 with prio 38 *****
+ 145: ***** Test Task 7 with prio 39 *****
+ 146: ***** Test Task X ***** Changing task priorities
+ 146: ***** Test Task 7 with prio 25 *****
+ 146: ***** Test Task 7 with prio 25 deletes itself*****
+ 146: ***** Test Task 6 with prio 26 *****
+ 146: ***** Test Task 6 with prio 26 deletes itself*****
+ 146: ***** Test Task 5 with prio 27 *****
+ 146: ***** Test Task 4 with prio 28 *****
+ 146: ***** Test Task 3 with prio 29 *****
+ 146: ***** Test Task 2 with prio 30 *****
+ 146: ***** Test Task 1 with prio 31 *****
+ 146: ***** Test Task 0 with prio 32 *****
+ 147: ***** Test Task X ***** Changing task priorities
+ 147: ***** Test Task 0 with prio 32 *****
+ 147: ***** Test Task 1 with prio 33 *****
+ 147: ***** Test Task 2 with prio 34 *****
+ 147: ***** Test Task 3 with prio 35 *****
+ 147: ***** Test Task 4 with prio 36 *****
+ 147: ***** Test Task 5 with prio 37 *****
+ 148: ***** Test Task X ***** Changing task priorities
+ 148: ***** Test Task 5 with prio 27 *****
+ 148: ***** Test Task 4 with prio 28 *****
+ 148: ***** Test Task 3 with prio 29 *****
+ 148: ***** Test Task 2 with prio 30 *****
+ 148: ***** Test Task 1 with prio 31 *****
+ 148: ***** Test Task 0 with prio 32 *****
+ 149: ***** Test Task X ***** Changing task priorities
+ 149: ***** Test Task 0 with prio 32 *****
+ 149: ***** Test Task 1 with prio 33 *****
+ 149: ***** Test Task 2 with prio 34 *****
+ 149: ***** Test Task 3 with prio 35 *****
+ 149: ***** Test Task 4 with prio 36 *****
+ 149: ***** Test Task 5 with prio 37 *****
+ 150: ***** Test Task X ***** Changing task priorities
+ 150: ***** Test Task 5 with prio 27 *****
+ 150: ***** Test Task 4 with prio 28 *****
+ 150: ***** Test Task 3 with prio 29 *****
+ 150: ***** Test Task 2 with prio 30 *****
+ 150: ***** Test Task 1 with prio 31 *****
+ 150: ***** Test Task 0 with prio 32 *****
+ 151: ***** Test Task X *****
+ 151: ***** Test Task 5 with prio 27 *****
+ 151: ***** Test Task 4 with prio 28 *****
+ 151: ***** Test Task 3 with prio 29 *****
+ 151: ***** Test Task 2 with prio 30 *****
+ 151: ***** Test Task 1 with prio 31 *****
+ 151: ***** Test Task 0 with prio 32 *****
+ 152: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 153: ***** Test Task X *****
+ 154: ***** Test Task X *****
+ 155: ***** Test Task X *****
+ 156: ***** Test Task X *****
+ 157: ***** Test Task X *****
+ 158: ***** Test Task X *****
+ 159: ***** Test Task X *****
+ 160: ***** Test Task X ***** Creating new task
+ 160: ***** Test Task 0 with prio 32 First call *****
+ 160: ***** Test Task 0 ***** Creating new task
+ 160: ***** Test Task 1 with prio 31 First call *****
+ 160: ***** Test Task 1 ***** Creating new task
+ 160: ***** Test Task 2 with prio 30 First call *****
+ 160: ***** Test Task 2 ***** Creating new task
+ 160: ***** Test Task 3 with prio 29 First call *****
+ 160: ***** Test Task 3 ***** Creating new task
+ 160: ***** Test Task 4 with prio 28 First call *****
+ 160: ***** Test Task 4 ***** Creating new task
+ 160: ***** Test Task 5 with prio 27 First call *****
+ 160: ***** Test Task 5 ***** Creating new task
+ 160: ***** Test Task 6 with prio 26 First call *****
+ 160: ***** Test Task 6 ***** Creating new task
+ 160: ***** Test Task 7 with prio 25 First call *****
+ 160: ***** Test Task 7 with prio 25 *****
+ 160: ***** Test Task 6 with prio 26 *****
+ 160: ***** Test Task 5 with prio 27 *****
+ 160: ***** Test Task 4 with prio 28 *****
+ 160: ***** Test Task 3 with prio 29 *****
+ 160: ***** Test Task 2 with prio 30 *****
+ 160: ***** Test Task 1 with prio 31 *****
+ 160: ***** Test Task 0 with prio 32 *****
+ 161: ***** Test Task X ***** Changing task priorities
+ 161: ***** Test Task 0 with prio 32 *****
+ 161: ***** Test Task 1 with prio 33 *****
+ 161: ***** Test Task 2 with prio 34 *****
+ 161: ***** Test Task 3 with prio 35 *****
+ 161: ***** Test Task 4 with prio 36 *****
+ 161: ***** Test Task 5 with prio 37 *****
+ 161: ***** Test Task 6 with prio 38 *****
+ 161: ***** Test Task 7 with prio 39 *****
+ 162: ***** Test Task X ***** Changing task priorities
+ 162: ***** Test Task 7 with prio 25 *****
+ 162: ***** Test Task 7 with prio 25 deletes itself*****
+ 162: ***** Test Task 6 with prio 26 *****
+ 162: ***** Test Task 6 with prio 26 deletes itself*****
+ 162: ***** Test Task 5 with prio 27 *****
+ 162: ***** Test Task 4 with prio 28 *****
+ 162: ***** Test Task 3 with prio 29 *****
+ 162: ***** Test Task 2 with prio 30 *****
+ 162: ***** Test Task 1 with prio 31 *****
+ 162: ***** Test Task 0 with prio 32 *****
+ 163: ***** Test Task X ***** Changing task priorities
+ 163: ***** Test Task 0 with prio 32 *****
+ 163: ***** Test Task 1 with prio 33 *****
+ 163: ***** Test Task 2 with prio 34 *****
+ 163: ***** Test Task 3 with prio 35 *****
+ 163: ***** Test Task 4 with prio 36 *****
+ 163: ***** Test Task 5 with prio 37 *****
+ 164: ***** Test Task X ***** Changing task priorities
+ 164: ***** Test Task 5 with prio 27 *****
+ 164: ***** Test Task 4 with prio 28 *****
+ 164: ***** Test Task 3 with prio 29 *****
+ 164: ***** Test Task 2 with prio 30 *****
+ 164: ***** Test Task 1 with prio 31 *****
+ 164: ***** Test Task 0 with prio 32 *****
+ 165: ***** Test Task X ***** Changing task priorities
+ 165: ***** Test Task 0 with prio 32 *****
+ 165: ***** Test Task 1 with prio 33 *****
+ 165: ***** Test Task 2 with prio 34 *****
+ 165: ***** Test Task 3 with prio 35 *****
+ 165: ***** Test Task 4 with prio 36 *****
+ 165: ***** Test Task 5 with prio 37 *****
+ 166: ***** Test Task X ***** Changing task priorities
+ 166: ***** Test Task 5 with prio 27 *****
+ 166: ***** Test Task 4 with prio 28 *****
+ 166: ***** Test Task 3 with prio 29 *****
+ 166: ***** Test Task 2 with prio 30 *****
+ 166: ***** Test Task 1 with prio 31 *****
+ 166: ***** Test Task 0 with prio 32 *****
+ 167: ***** Test Task X *****
+ 167: ***** Test Task 5 with prio 27 *****
+ 167: ***** Test Task 4 with prio 28 *****
+ 167: ***** Test Task 3 with prio 29 *****
+ 167: ***** Test Task 2 with prio 30 *****
+ 167: ***** Test Task 1 with prio 31 *****
+ 167: ***** Test Task 0 with prio 32 *****
+ 168: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 169: ***** Test Task X *****
+ 170: ***** Test Task X *****
+ 171: ***** Test Task X *****
+ 172: ***** Test Task X *****
+ 173: ***** Test Task X *****
+ 174: ***** Test Task X *****
+ 175: ***** Test Task X *****
+ 176: ***** Test Task X ***** Creating new task
+ 176: ***** Test Task 0 with prio 32 First call *****
+ 176: ***** Test Task 0 ***** Creating new task
+ 176: ***** Test Task 1 with prio 31 First call *****
+ 176: ***** Test Task 1 ***** Creating new task
+ 176: ***** Test Task 2 with prio 30 First call *****
+ 176: ***** Test Task 2 ***** Creating new task
+ 176: ***** Test Task 3 with prio 29 First call *****
+ 176: ***** Test Task 3 ***** Creating new task
+ 176: ***** Test Task 4 with prio 28 First call *****
+ 176: ***** Test Task 4 ***** Creating new task
+ 176: ***** Test Task 5 with prio 27 First call *****
+ 176: ***** Test Task 5 ***** Creating new task
+ 176: ***** Test Task 6 with prio 26 First call *****
+ 176: ***** Test Task 6 ***** Creating new task
+ 176: ***** Test Task 7 with prio 25 First call *****
+ 176: ***** Test Task 7 with prio 25 *****
+ 176: ***** Test Task 6 with prio 26 *****
+ 176: ***** Test Task 5 with prio 27 *****
+ 176: ***** Test Task 4 with prio 28 *****
+ 176: ***** Test Task 3 with prio 29 *****
+ 176: ***** Test Task 2 with prio 30 *****
+ 176: ***** Test Task 1 with prio 31 *****
+ 176: ***** Test Task 0 with prio 32 *****
+ 177: ***** Test Task X ***** Changing task priorities
+ 177: ***** Test Task 0 with prio 32 *****
+ 177: ***** Test Task 1 with prio 33 *****
+ 177: ***** Test Task 2 with prio 34 *****
+ 177: ***** Test Task 3 with prio 35 *****
+ 177: ***** Test Task 4 with prio 36 *****
+ 177: ***** Test Task 5 with prio 37 *****
+ 177: ***** Test Task 6 with prio 38 *****
+ 177: ***** Test Task 7 with prio 39 *****
+ 178: ***** Test Task X ***** Changing task priorities
+ 178: ***** Test Task 7 with prio 25 *****
+ 178: ***** Test Task 7 with prio 25 deletes itself*****
+ 178: ***** Test Task 6 with prio 26 *****
+ 178: ***** Test Task 6 with prio 26 deletes itself*****
+ 178: ***** Test Task 5 with prio 27 *****
+ 178: ***** Test Task 4 with prio 28 *****
+ 178: ***** Test Task 3 with prio 29 *****
+ 178: ***** Test Task 2 with prio 30 *****
+ 178: ***** Test Task 1 with prio 31 *****
+ 178: ***** Test Task 0 with prio 32 *****
+ 179: ***** Test Task X ***** Changing task priorities
+ 179: ***** Test Task 0 with prio 32 *****
+ 179: ***** Test Task 1 with prio 33 *****
+ 179: ***** Test Task 2 with prio 34 *****
+ 179: ***** Test Task 3 with prio 35 *****
+ 179: ***** Test Task 4 with prio 36 *****
+ 179: ***** Test Task 5 with prio 37 *****
+ 180: ***** Test Task X ***** Changing task priorities
+ 180: ***** Test Task 5 with prio 27 *****
+ 180: ***** Test Task 4 with prio 28 *****
+ 180: ***** Test Task 3 with prio 29 *****
+ 180: ***** Test Task 2 with prio 30 *****
+ 180: ***** Test Task 1 with prio 31 *****
+ 180: ***** Test Task 0 with prio 32 *****
+ 181: ***** Test Task X ***** Changing task priorities
+ 181: ***** Test Task 0 with prio 32 *****
+ 181: ***** Test Task 1 with prio 33 *****
+ 181: ***** Test Task 2 with prio 34 *****
+ 181: ***** Test Task 3 with prio 35 *****
+ 181: ***** Test Task 4 with prio 36 *****
+ 181: ***** Test Task 5 with prio 37 *****
+ 182: ***** Test Task X ***** Changing task priorities
+ 182: ***** Test Task 5 with prio 27 *****
+ 182: ***** Test Task 4 with prio 28 *****
+ 182: ***** Test Task 3 with prio 29 *****
+ 182: ***** Test Task 2 with prio 30 *****
+ 182: ***** Test Task 1 with prio 31 *****
+ 182: ***** Test Task 0 with prio 32 *****
+ 183: ***** Test Task X *****
+ 183: ***** Test Task 5 with prio 27 *****
+ 183: ***** Test Task 4 with prio 28 *****
+ 183: ***** Test Task 3 with prio 29 *****
+ 183: ***** Test Task 2 with prio 30 *****
+ 183: ***** Test Task 1 with prio 31 *****
+ 183: ***** Test Task 0 with prio 32 *****
+ 184: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 185: ***** Test Task X *****
+ 186: ***** Test Task X *****
+ 187: ***** Test Task X *****
+ 188: ***** Test Task X *****
+ 189: ***** Test Task X *****
+ 190: ***** Test Task X *****
+ 191: ***** Test Task X *****
+ 192: ***** Test Task X ***** Creating new task
+ 192: ***** Test Task 0 with prio 32 First call *****
+ 192: ***** Test Task 0 ***** Creating new task
+ 192: ***** Test Task 1 with prio 31 First call *****
+ 192: ***** Test Task 1 ***** Creating new task
+ 192: ***** Test Task 2 with prio 30 First call *****
+ 192: ***** Test Task 2 ***** Creating new task
+ 192: ***** Test Task 3 with prio 29 First call *****
+ 192: ***** Test Task 3 ***** Creating new task
+ 192: ***** Test Task 4 with prio 28 First call *****
+ 192: ***** Test Task 4 ***** Creating new task
+ 192: ***** Test Task 5 with prio 27 First call *****
+ 192: ***** Test Task 5 ***** Creating new task
+ 192: ***** Test Task 6 with prio 26 First call *****
+ 192: ***** Test Task 6 ***** Creating new task
+ 192: ***** Test Task 7 with prio 25 First call *****
+ 192: ***** Test Task 7 with prio 25 *****
+ 192: ***** Test Task 6 with prio 26 *****
+ 192: ***** Test Task 5 with prio 27 *****
+ 192: ***** Test Task 4 with prio 28 *****
+ 192: ***** Test Task 3 with prio 29 *****
+ 192: ***** Test Task 2 with prio 30 *****
+ 192: ***** Test Task 1 with prio 31 *****
+ 192: ***** Test Task 0 with prio 32 *****
+ 193: ***** Test Task X ***** Changing task priorities
+ 193: ***** Test Task 0 with prio 32 *****
+ 193: ***** Test Task 1 with prio 33 *****
+ 193: ***** Test Task 2 with prio 34 *****
+ 193: ***** Test Task 3 with prio 35 *****
+ 193: ***** Test Task 4 with prio 36 *****
+ 193: ***** Test Task 5 with prio 37 *****
+ 193: ***** Test Task 6 with prio 38 *****
+ 193: ***** Test Task 7 with prio 39 *****
+ 194: ***** Test Task X ***** Changing task priorities
+ 194: ***** Test Task 7 with prio 25 *****
+ 194: ***** Test Task 7 with prio 25 deletes itself*****
+ 194: ***** Test Task 6 with prio 26 *****
+ 194: ***** Test Task 6 with prio 26 deletes itself*****
+ 194: ***** Test Task 5 with prio 27 *****
+ 194: ***** Test Task 4 with prio 28 *****
+ 194: ***** Test Task 3 with prio 29 *****
+ 194: ***** Test Task 2 with prio 30 *****
+ 194: ***** Test Task 1 with prio 31 *****
+ 194: ***** Test Task 0 with prio 32 *****
+ 195: ***** Test Task X ***** Changing task priorities
+ 195: ***** Test Task 0 with prio 32 *****
+ 195: ***** Test Task 1 with prio 33 *****
+ 195: ***** Test Task 2 with prio 34 *****
+ 195: ***** Test Task 3 with prio 35 *****
+ 195: ***** Test Task 4 with prio 36 *****
+ 195: ***** Test Task 5 with prio 37 *****
+ 196: ***** Test Task X ***** Changing task priorities
+ 196: ***** Test Task 5 with prio 27 *****
+ 196: ***** Test Task 4 with prio 28 *****
+ 196: ***** Test Task 3 with prio 29 *****
+ 196: ***** Test Task 2 with prio 30 *****
+ 196: ***** Test Task 1 with prio 31 *****
+ 196: ***** Test Task 0 with prio 32 *****
+ 197: ***** Test Task X ***** Changing task priorities
+ 197: ***** Test Task 0 with prio 32 *****
+ 197: ***** Test Task 1 with prio 33 *****
+ 197: ***** Test Task 2 with prio 34 *****
+ 197: ***** Test Task 3 with prio 35 *****
+ 197: ***** Test Task 4 with prio 36 *****
+ 197: ***** Test Task 5 with prio 37 *****
+ 198: ***** Test Task X ***** Changing task priorities
+ 198: ***** Test Task 5 with prio 27 *****
+ 198: ***** Test Task 4 with prio 28 *****
+ 198: ***** Test Task 3 with prio 29 *****
+ 198: ***** Test Task 2 with prio 30 *****
+ 198: ***** Test Task 1 with prio 31 *****
+ 198: ***** Test Task 0 with prio 32 *****
+ 199: ***** Test Task X *****
+ 199: ***** Test Task 5 with prio 27 *****
+ 199: ***** Test Task 4 with prio 28 *****
+ 199: ***** Test Task 3 with prio 29 *****
+ 199: ***** Test Task 2 with prio 30 *****
+ 199: ***** Test Task 1 with prio 31 *****
+ 199: ***** Test Task 0 with prio 32 *****
+ 200: ***** Test Task X ***** Deleting tasks 0 ... 7
+ 201: ***** Test Task X *****
+ 202: ***** Test Task X *****
+ 203: ***** Test Task X *****
+ 204: ***** Test Task X *****
+ 205: ***** Test Task X *****
+ 206: ***** Test Task X *****
+ 207: ***** Test Task X *****
+ 208: ***** Test Task X ***** Creating new task
+ 208: ***** Test Task 0 with prio 32 First call *****
+ 208: ***** Test Task 0 ***** Creating new task
+ 208: ***** Test Task 1 with prio 31 First call *****
+ 208: ***** Test Task 1 ***** Creating new task
+ 208: ***** Test Task 2 with prio 30 First call *****
+ 208: ***** Test Task 2 ***** Creating new task
+ 208: ***** Test Task 3 with prio 29 First call *****
+ 208: ***** Test Task 3 ***** Creating new task
+ 208: ***** Test Task 4 with prio 28 First call *****
+ 208: ***** Test Task 4 ***** Creating new task
+ 208: ***** Test Task 5 with prio 27 First call *****
+ 208: ***** Test Task 5 ***** Creating new task
+ 208: ***** Test Task 6 with prio 26 First call *****
+ 208: ***** Test Task 6 ***** Creating new task
+ 208: ***** Test Task 7 with prio 25 First call *****
+ 208: ***** Test Task 7 with prio 25 *****
+ 208: ***** Test Task 6 with prio 26 *****
+ 208: ***** Test Task 5 with prio 27 *****
+ 208: ***** Test Task 4 with prio 28 *****
+ 208: ***** Test Task 3 with prio 29 *****
+ 208: ***** Test Task 2 with prio 30 *****
+ 208: ***** Test Task 1 with prio 31 *****
+ 208: ***** Test Task 0 with prio 32 *****
+ 209: ***** Test Task X ***** Changing task priorities
+ 209: ***** Test Task 0 with prio 32 *****
+ 209: ***** Test Task 1 with prio 33 *****
+ 209: ***** Test Task 2 with prio 34 *****
+ 209: ***** Test Task 3 with prio 35 *****
+ 209: ***** Test Task 4 with prio 36 *****
+ 209: ***** Test Task 5 with prio 37 *****
+ 209: ***** Test Task 6 with prio 38 *****
+ 209: ***** Test Task 7 with prio 39 *****
+ 210: ***** Test Task X ***** Changing task priorities
+ 210: ***** Test Task 7 with prio 25 *****
+ 210: ***** Test Task 7 with prio 25 deletes itself*****
+ 210: ***** Test Task 6 with prio 26 *****
+ 210: ***** Test Task 6 with prio 26 deletes itself*****
+ 210: ***** Test Task 5 with prio 27 *****
+ 210: ***** Test Task 4 with prio 28 *****
+ 210: ***** Test Task 3 with prio 29 *****
+ 210: ***** Test Task 2 with prio 30 *****
+ 210: ***** Test Task 1 with prio 31 *****
+ 210: ***** Test Task 0 with prio 32 *****
+ 211: ***** Test Task X ***** Changing task priorities
+ 211: ***** Test Task 0 with prio 32 *****
+ 211: ***** Test Task 1 with prio 33 *****
+ 211: ***** Test Task 2 with prio 34 *****
+ 211: ***** Test Task 3 with prio 35 *****
+ 211: ***** Test Task 4 with prio 36 *****
+ 211: ***** Test Task 5 with prio 37 *****
+ 212: ***** Test Task X ***** Changing task priorities
+ 212: ***** Test Task 5 with prio 27 *****
+ 212: ***** Test Task 4 with prio 28 *****
+ 212: ***** Test Task 3 with prio 29 *****
+ 212: ***** Test Task 2 with prio 30 *****
+ 212: ***** Test Task 1 with prio 31 *****
+ 212: ***** Test Task 0 with prio 32 *****
+ 213: ***** Test Task X ***** Changing task priorities
+ 213: ***** Test Task 0 with prio 32 *****
+ 213: ***** Test Task 1 with prio 33 *****
+ 213: ***** Test Task 2 with prio 34 *****
+ 213: ***** Test Task 3 with prio 35 *****
+ 213: ***** Test Task 4 with prio 36 *****
+ 213: ***** Test Task 5 with prio 37 *****
+ 214: ***** Test Task X ***** Changing task priorities
+ 214: ***** Test Task 5 with prio 27 *****
+ 214: ***** Test Task 4 with prio 28 *****
+ 214: ***** Test Task 3 with prio 29 *****
+ 214: ***** Test Task 2 with prio 30 *****
+ 214: ***** Test Task 1 with prio 31 *****
+ 214: ***** Test Task 0 with prio 32 *****
+---Exiting OSPrioCur=63-------------
